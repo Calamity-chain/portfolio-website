@@ -35,7 +35,7 @@ Secondary Color (Orange): #FF8C00;
    background-color: lightgray;
    font-family: var(--primary-font);
    font-weight: var(--primary-font-weight);
-   font-size: var(-primary-font-size);
+   font-size: var(--primary-font-size);
    /* Sets the font size to 16px */
    line-height: var(--primary-line-height);
    /* Sets the line-height to 1.6 */
@@ -249,17 +249,17 @@ button:hover, button:focus,
 
  h1 {
    font-size: 30px;
-   font-weight: var(secondary-font-weight);
+   font-weight: var(--secondary-font-weight);
  }
 
  h2 {
    font-size: 24px;
-   font-weight: var(secondary-font-weight);
+   font-weight: var(--secondary-font-weight);
  }
 
  h3 {
    font-size: 18px;
-   font-weight: var(secondary-font-weight);
+   font-weight: var(--secondary-font-weight);
  }
 
  @media all and (max-width: 500px) {
