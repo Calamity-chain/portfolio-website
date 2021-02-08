@@ -14,7 +14,7 @@
    background-color: lightgray;
    font-family: 'Inconsolata', monospace;
    font-weight: 400;
-   font-size: undefined;
+   font-size: 16px;
    /* Sets the font size to 16px */
    line-height: 1.6;
    /* Sets the line-height to 1.6 */
@@ -33,6 +33,8 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
+  -webkit-animation: 30s nikita-effect infinite alternate linear;
+          animation: 30s nikita-effect infinite alternate linear;
 }
 
 .page-header__item:last-child {
@@ -97,6 +99,7 @@
 .profile {
   max-width: 700px;
   margin: 0 auto;
+
 }
 
  .profile__portrait {
@@ -114,24 +117,23 @@
 }
 
 
-.page-about, .page-footer, .page-work, .page-contact {
-  margin: 15px;
-  padding: 20px;
+.page-about, .page-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.page-about {
+.page-about, .page-work, .page-contact {
+  margin : 15px;
+  padding : 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
-
 
 .page-footer {
   clear: both;
@@ -154,12 +156,18 @@ a {
    color: white;
  }
 
-
- #contact-form {
-   align-items: center;
-   display: flex;
-   flex-direction: column;
- }
+#contact-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 
  #my-link {/* id selector */
    color: #FF1493;
@@ -309,6 +317,28 @@ button:hover, button:focus,
   }
 }
 
+@-webkit-keyframes nikita-effect {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes nikita-effect {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
           animation: 4s color-change infinite alternate linear;
@@ -327,17 +357,17 @@ button:hover, button:focus,
 
  h1 {
    font-size: 30px;
-   font-weight: var(secondary-font-weight);
+   font-weight: 700;
  }
 
  h2 {
    font-size: 24px;
-   font-weight: var(secondary-font-weight);
+   font-weight: 700;
  }
 
  h3 {
    font-size: 18px;
-   font-weight: var(secondary-font-weight);
+   font-weight: 700;
  }
 
  @media all and (max-width: 500px) {
@@ -365,4 +395,4 @@ button:hover, button:focus,
   h1 {
     font-size: 22px;
   }
-  }
+}
