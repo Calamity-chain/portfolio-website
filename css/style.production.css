@@ -96,8 +96,7 @@
 
 .profile {
   max-width: 700px;
-  margin: 15px;
-  padding: 20px;
+  margin: 0 auto;
 }
 
  .profile__portrait {
