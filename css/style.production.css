@@ -96,7 +96,8 @@
 
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 15px;
+  padding: 20px;
 }
 
  .profile__portrait {
@@ -114,10 +115,13 @@
 }
 
 
-.page-about, .page-footer {
+.page-about, .page-footer, .page-work, .page-contact {
+  margin: 15px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -128,6 +132,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
 
 .page-footer {
   clear: both;
@@ -148,6 +153,13 @@ a {
  a:active {
    /* selected link */
    color: white;
+ }
+
+
+ #contact-form {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
  }
 
  #my-link {/* id selector */

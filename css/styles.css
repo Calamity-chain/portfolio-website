@@ -25,7 +25,7 @@ Secondary Color (Orange): #FF8C00;
    --primary-line-height: 1.6;
    --secondary-font-weight: 700;
   }
-  
+
 
  * {
    box-sizing: border-box;
@@ -106,7 +106,8 @@ Secondary Color (Orange): #FF8C00;
 
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 15px;
+  padding : 20px;
 }
 
  .profile__portrait {
@@ -126,8 +127,11 @@ Secondary Color (Orange): #FF8C00;
   display: flex;
   flex-direction: column;
 }
-.page-about {
+.page-about, .page-work, .page-contact {
+  margin : 15px;
+  padding : 20px;
   align-items: center;
+  text-align: center;
 }
 
 .page-footer {
@@ -150,6 +154,12 @@ a {
    /* selected link */
    color: white;
  }
+
+#contact-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 
  #my-link {/* id selector */
    color: var(--fluo-pink);
