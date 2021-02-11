@@ -50,6 +50,9 @@ Secondary Color (Orange): #FF8C00;
 
 .page-header__item {
   flex: 0 1 200px;
+}
+
+img.page-header__item {
   animation: 30s nikita-effect infinite alternate linear;
 }
 

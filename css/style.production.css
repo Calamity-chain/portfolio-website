@@ -33,8 +33,11 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
-  -webkit-animation: 30s nikita-effect infinite alternate linear;
-          animation: 30s nikita-effect infinite alternate linear;
+}
+
+img.page-header__item {
+-webkit-animation: 30s nikita-effect infinite alternate linear;
+animation: 30s nikita-effect infinite alternate linear;
 }
 
 .page-header__item:last-child {
